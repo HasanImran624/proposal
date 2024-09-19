@@ -1,0 +1,125 @@
+html {
+  height: 100%;
+}
+body {
+  background: linear-gradient(117deg, #EFF2FF 0%, rgba(255, 73, 73, 0.81) 100%);
+}
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 72px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.btn {
+  color: gray;
+  background-color: white;
+  border: none;
+  border-radius: 50px;
+  width: 200px;
+  height: 50px;
+  margin: 25px 10px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+    animation: bounce 2s infinite;
+}
+.btn:hover {
+  background-color: #ff4690;
+  border: 2px solid white;
+}
+@media (max-width: 1148px) {
+  h1 {
+    font-size: 50px;
+  }
+  .btn {
+    width: 150px;
+    height: 40px;
+  }
+}
+@media (max-width: 795px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+#showMessage {
+  display: none;
+}
+#showMessage h1 {
+  font-size: 50px;
+}
+/* Animate Text */
+.ml6 {
+  position: relative;
+}
+
+.ml6 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml6 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+/* Footer */
+footer {
+  color: #fff;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+/* Heart shape and animations */
+.heart {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: rgb(230, 32, 65);
+  transform: rotate(45deg);
+  animation: float 7s ease-in-out infinite;
+}
+
+.heart:before, .heart:after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: rgb(230, 32, 65);
+  border-radius: 50%;
+}
+
+.heart:before {
+  top: -7px;
+  left: 0;
+}
+
+.heart:after {
+  left: 7px;
+  top: 0;
+}
+
+@keyframes float {
+  0% {
+      transform: translateY(0) scale(0.7);
+      opacity: 1;
+  }
+  100% {
+      transform: translateY(-100px) scale(0.5);
+      opacity: 0;
+  }
+}
+/* Bounce effect on button */
+@keyframes bounce {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+}
+
